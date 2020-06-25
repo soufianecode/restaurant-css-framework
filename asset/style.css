@@ -1,0 +1,39 @@
+body {
+    padding-top: 10px;
+    background-color: #FFF5EA;
+  }
+  [class*="col-"]{
+    background-color: #ffffff;
+    /*border: 1px solid #eee;
+    border-radius: 6px;*/
+    line-height: 40px;
+    text-align: center;
+}
+nav.col-md-4{
+    background-color: #FFF5EA;
+    color: #ffffff;
+}
+
+div.col-md-4{
+    background-color: #FFF5EA;
+    
+}
+
+.bouton{
+    background-color: #484644;
+    color: #ffffff;
+    width: 80px;
+}
+
+.bouton a{
+    color: #ffffff;
+}
+
+p{
+    text-align: left;
+}
+
+div.row{
+    margin-bottom: 20px;
+    color: #000000;
+}
