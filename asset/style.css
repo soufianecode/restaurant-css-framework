@@ -1,28 +1,34 @@
 body {
     padding-top: 10px;
-    background-color: #FFF5EA;
+    background-color: #c0c0c0;
+    
   }
+
+
   [class*="col-"]{
-    background-color: #ffffff;
-    /*border: 1px solid #eee;
-    border-radius: 6px;*/
+    background-color: #343A40;
+    border-radius: 20px;
     line-height: 40px;
     text-align: center;
+    /*border: 1px solid black;*/
 }
 nav.col-md-4{
-    background-color: #FFF5EA;
+    background-color: #c0c0c0;
     color: #ffffff;
 }
 
 div.col-md-4{
-    background-color: #FFF5EA;
+    background-color: #c0c0c0;
     
 }
+
+
 
 .bouton{
     background-color: #484644;
     color: #ffffff;
     width: 80px;
+
 }
 
 .bouton a{
@@ -37,3 +43,25 @@ div.row{
     margin-bottom: 20px;
     color: #000000;
 }
+
+.map{
+    width: 100%;
+}
+
+.jumbotron{
+    padding: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: lightgray;
+    background-image: url(https://www.lifeofpix.com/wp-content/uploads/2017/10/img-6214-1600x914.jpg);
+}
+footer img{
+    width: 40px;
+}
+
+.logocol{
+    margin-left: 25px;
+    margin-bottom: 5em;
+}
+
