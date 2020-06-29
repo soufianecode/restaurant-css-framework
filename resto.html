@@ -5,6 +5,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="asset/bootstrap.css">
     <link rel="stylesheet" href="asset/style.css">
+
+
 </head>
 
 
@@ -85,7 +87,7 @@
 
     <!--section picture-->
 
-    <div class="container">
+    <!--<div class="container">
         <ul class="pagination">
           <li><a href="#">&laquo;</a></li>
           <li><a href="#">1</a></li>
@@ -94,6 +96,25 @@
           <li><a href="#">&raquo;</a></li>
         </ul>
       </div>
+    -->
+
+
+    <div class="container-picture">
+        <div id="content" class="row">
+            <div class="col-md-2"><img src="image/salade.jpg" alt="plat de salade" ></div>
+            <div class="col-md-2"><img src="image/salade1.jpg" alt="plat de salade" ></div>
+            <div class="col-md-2"><img src="image/plat1.jpg" alt="plat au légume" ></div>
+            <div class="col-md-2"><img src="image/spaghet.jpg" alt="spaghetti" ></div>
+            <div class="col-md-2"><img src="image/tartine.jpg" alt="tartine au fruit" ></div>
+            <div class="col-md-2"><img src="image/petitdej.jpg" alt="petit déjeuner classique" ></div>
+            <div class="col-md-2"><img src="image/dessert.jpg" alt="dessert" ></div>
+            <div class="col-md-2"><img src="image/dessert2.jpg" alt="dessert" ></div>
+            <div class="col-md-2"><img src="image/dessert3.jpg" alt="dessert" ></div>
+            <div class="col-md-2"><img src="image/kiwi.jpg" alt="boisson" ></div>
+            
+        </div>
+        <div id="page_navigation"> </div>
+    </div>
 
 
 
@@ -130,6 +151,59 @@
         </div>
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script> 
+
+        var show_per_page = 3; 
+        var current_page = 0;
+    
+        function set_display(first, last) {
+          $('#content').children().css('display', 'none');
+          $('#content').children().slice(first, last).css('display', 'block');
+        }
+    
+        function previous(){
+            if($('.active').prev('.page_link').length) go_to_page(current_page - 1);
+        }
+    
+        function next(){
+            if($('.active').next('.page_link').length) go_to_page(current_page + 1);
+        }
+    
+        function go_to_page(page_num){
+          current_page = page_num;
+          start_from = current_page * show_per_page;
+          end_on = start_from + show_per_page;
+          set_display(start_from, end_on);
+          $('.active').removeClass('active');
+          $('#id' + page_num).addClass('active');
+        }  
+    
+        $(document).ready(function() {
+    
+          var number_of_pages = Math.ceil($('#content').children().length / show_per_page);
+          
+          var nav = '<ul class="pagination"><li><a href="javascript:previous();">&laquo;</a>';
+    
+          var i = -1;
+          while(number_of_pages > ++i){
+            nav += '<li class="page_link'
+            if(!i) nav += ' active';
+            nav += '" id="id' + i +'">';
+            nav += '<a href="javascript:go_to_page(' + i +')">'+ (i + 1) +'</a>';
+          }
+          nav += '<li><a href="javascript:next();">&raquo;</a></ul>';
+    
+          $('#page_navigation').html(nav);
+          set_display(0, show_per_page);
+          
+        });
+    
+      </script>
 
     
 
