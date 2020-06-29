@@ -1,6 +1,9 @@
 body {
+    padding: 0;
+    margin: 0;
     padding-top: 10px;
     background-color: #c0c0c0;
+    color: lightgray;
     
   }
 
@@ -29,6 +32,10 @@ div.col-md-4{
     color: #ffffff;
     width: 80px;
 
+}
+
+.bouton:hover{
+    background-color: #960202;
 }
 
 .bouton a{
@@ -65,3 +72,10 @@ footer img{
     margin-bottom: 5em;
 }
 
+a, a:hover{
+    text-decoration: none;
+}
+
+.container-picture img{
+    width: 100%;
+}
