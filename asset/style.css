@@ -13,6 +13,7 @@ body {
     border-radius: 20px;
     line-height: 40px;
     text-align: center;
+    color: #ffffff;
     /*border: 1px solid black;*/
 }
 nav.col-md-4{
@@ -78,4 +79,11 @@ a, a:hover{
 
 .container-picture img{
     width: 100%;
+    
 }
+
+.container-picture{
+    margin-left: 300px;
+    
+}
+
