@@ -32,11 +32,14 @@ div.col-md-4{
     background-color: #484644;
     color: #ffffff;
     width: 80px;
+    
 
 }
 
 .bouton:hover{
     background-color: #960202;
+    
+    
 }
 
 .bouton a{
@@ -83,7 +86,16 @@ a, a:hover{
 }
 
 .container-picture{
-    margin-left: 300px;
-    
+    /*margin-left: 300px;*/
+    border: 1px solid black;
+    background-color: #c0c0c0;
 }
 
+.bg-col{
+    background-color: #c0c0c0;
+}
+
+
+.pagination{
+    
+}
