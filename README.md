@@ -4,10 +4,10 @@
 [Site web du restaurant](https://soufianecode.github.io/restaurant-css-framework/)
 
 ## Languages used
--Html5
--Css3
--Bootstrap 3
--JavaScript
+-Html5</br>
+-Css3</br>
+-Bootstrap 3</br>
+-JavaScript</br>
 
 ## Missions objectives
 -placement of element with Bootstrap
@@ -16,9 +16,13 @@
 -solo
 
 ## Auto-critique
--meilleur utilisation des commentaires
--faire attention à utiliser les bonnes classes
--alignement pas parfait
+-meilleur utilisation des commentaires</br>
+-faire attention à utiliser les bonnes classes</br>
+-alignement pas parfait</br>
+-meilleur gestion des dossiers(asset/,...)</br>
+-mieux éditer le readme (Progression du projet)</br>
+
+
 ## Crédit
 
 [free image food](https://fr.freeimages.com/photo/healthy-food-1328279)
