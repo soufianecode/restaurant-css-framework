@@ -86,16 +86,14 @@ a, a:hover{
 }
 
 .container-picture{
-    /*margin-left: 300px;*/
-    border: 1px solid black;
+   
+    /*border: 1px solid black;*/
     background-color: #c0c0c0;
-}
-
-.bg-col{
-    background-color: #c0c0c0;
-}
-
-
-.pagination{
     
+}
+
+
+#page_navigation{
+    display: flex;
+    justify-content: center;
 }
